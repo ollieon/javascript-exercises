@@ -4,10 +4,8 @@ const convertToCelsius = function(temp) {
   return num;
 };
 
-const convertToFahrenheit = function(temp) {
-  let num = (1.8 * temp) + 32;
-  num = Math.round(num*10) / 10;
-  return num;
+const convertToFahrenheit = function(celsius) {
+  return Math.round(((1.8 * celsius) + 32)*10) / 10;
 };
 
 // Do not edit below this line
